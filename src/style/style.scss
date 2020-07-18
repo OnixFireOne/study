@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import "fonts-icons";
+
+html {
+  &[data-theme='white'] {
+    --color: black;
+    --background-color: white;
+    --link-color: #698;
+  }
+  &[data-theme='dark']{
+    --color: white;
+    --background-color: black;
+    --link-color: #690;
+  }
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
+}
+
+h1{
+  font-size: 4rem;
+  @media (max-width:500px) {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+}
+hr {
+  display: none;
+
+  @media (max-width:500px) {
+      display: block;
+  }
+}
+.color-theme {
+  color: var(--color);
+  background-color: var(--background-color);
+
+  a {
+    color: var(--link-color)
+  }
+}
+
+
+.first{
+  margin-bottom: 1rem;
+  picture {
+    width: inherit;
+    height: inherit;
+
+    img{
+      width: inherit;
+      height: inherit;
+    }
+  }
+
+}
+.second{
+  p{
+    margin-top: -5px;
+  }
+}
+.third{
+  .titleLink{
+    margin-top: -5px;
+  }
+}
+.swap-theme{
+  cursor: pointer;
+  &.active{
+    cursor: default;
+  }
+}
+.active{
+  border-bottom: solid 1px var(--color) ;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "devr",
+  "version": "1.0.0",
+  "description": "create for studying and develop any special script",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andy",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.9",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-file-include": "^2.2.2",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-typograf": "^4.0.3",
+    "gulp-webp": "^4.0.1"
+  },
+  "dependencies": {
+    "del": "^5.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-webp-html": "^1.0.2"
+  }
+}

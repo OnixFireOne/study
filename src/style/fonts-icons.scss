@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Icons';
+  src: url('../fonts/fontello.woff2?62527885') format('woff2'),
+  url('../fonts/fontello.woff?62527885') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "Icons";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+
+}
+
+.icon-electric-music:before { content: '\e800'; }
+.icon-clapperboard:before { content: '\e801'; }
+
+figure{
+  margin: 0;
+  display: inline-block;
+}

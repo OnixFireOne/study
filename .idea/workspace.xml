@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="80edfa10-3e71-4ac1-b64d-76fec8bdfe66" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Pug File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1emexbcnAZj25cT32wA5oak9UIs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/fonts" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/include" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="80edfa10-3e71-4ac1-b64d-76fec8bdfe66" name="Default Changelist" comment="" />
+      <created>1594931442846</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594931442846</updated>
+      <workItem from="1594931447577" duration="6145000" />
+      <workItem from="1594976670611" duration="18236000" />
+      <workItem from="1595064327642" duration="8110000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1473" y="521" key="#File_Watchers" timestamp="1594992647770">
+      <screen x="0" y="23" width="2560" height="1334" />
+    </state>
+    <state x="1473" y="521" key="#File_Watchers/0.23.2560.1334@0.23.2560.1334" timestamp="1594992647770" />
+    <state x="1075" y="482" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594932538831">
+      <screen x="0" y="23" width="2560" height="1334" />
+    </state>
+    <state x="1075" y="482" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1334@0.23.2560.1334" timestamp="1594932538831" />
+    <state x="1183" y="605" width="854" height="467" key="EditFileWatcherDialog" timestamp="1594932517269">
+      <screen x="0" y="23" width="2560" height="1334" />
+    </state>
+    <state x="1183" y="605" width="854" height="467" key="EditFileWatcherDialog/0.23.2560.1334@0.23.2560.1334" timestamp="1594932517269" />
+    <state x="1112" y="459" key="SettingsEditor" timestamp="1594933171736">
+      <screen x="0" y="23" width="2560" height="1334" />
+    </state>
+    <state x="1112" y="459" key="SettingsEditor/0.23.2560.1334@0.23.2560.1334" timestamp="1594933171736" />
+    <state x="1764" y="425" key="run.anything.popup" timestamp="1594938264532">
+      <screen x="0" y="23" width="2560" height="1334" />
+    </state>
+    <state x="1764" y="425" key="run.anything.popup/0.23.2560.1334@0.23.2560.1334" timestamp="1594938264532" />
+    <state x="1480" y="475" width="670" height="676" key="search.everywhere.popup" timestamp="1595102273102">
+      <screen x="0" y="23" width="2560" height="1334" />
+    </state>
+    <state x="1480" y="475" width="670" height="676" key="search.everywhere.popup/0.23.2560.1334@0.23.2560.1334" timestamp="1595102273102" />
+  </component>
+</project>
