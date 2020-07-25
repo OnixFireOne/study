@@ -1,0 +1,24 @@
+.container
+    .row
+        .col
+            h2 Написать нам
+            span  Заполните форму справа
+            span  или отправте письмо на shop@reproduct.io
+        .col
+            .form-contact
+                form
+                    .in-email
+                        input(type='email' placeholder='Email')
+                    .in-text
+                        textarea(placeholder='Сообщение')
+    .row
+        .col
+            .cap Репродукцио, 2020
+            .roll
+                a(data-fancybox='hello' data-src='#small-dialog' href='javascript:;') Правила обработки персональных данных
+            #small-dialog(style="display:none;")
+                include p
+        .col
+            .inner-button
+                button(type='button' class='button-form') Отправить сообщение
+

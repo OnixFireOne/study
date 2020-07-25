@@ -1,16 +1,10 @@
+import initTheme from "./parts/theme";
+import initSliders from "./parts/sliders";
+import initPopup from "./parts/popup";
+import from from "./parts/form";
 jQuery(document).ready(function($) {
-    let $linkTheme = $('.swap');
-    let $linkThemeData;
-
-    $linkTheme.click(function (e) {
-        $linkThemeData = $(e.target).data('theme-color');
-        $('html').attr('data-theme', $linkThemeData);
-
-        for(let i = 0;i<this.children.length;i++){
-            this.children[i].classList.remove('active');
-        }
-        e.target.classList.add('active');
-
-    });
-
+    initTheme();
+    initSliders();
+    initPopup();
+    from();
 });

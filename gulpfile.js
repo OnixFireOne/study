@@ -43,7 +43,9 @@ let {src, dest} = require('gulp'),
     group_media = require('gulp-group-css-media-queries'),
     imagemin = require('gulp-imagemin'),
     webp = require('gulp-webp'),
+    webpack = require('webpack-stream'),
     webphtml = require('gulp-webp-html');
+
 
 
 
@@ -62,7 +64,7 @@ function browserSync(params) {
 function html() {
     return src(path.src.html)
         .pipe(pug())
-        .pipe(webphtml())
+        //.pipe(webphtml())
         .pipe(
             typograf({
                 locale:['ru', 'en-US']
@@ -86,31 +88,32 @@ function style() {
             }),
         )
         .pipe(postcss([
-
                 cssnano()
         ])
         )
-        .pipe(dest(path.build.style))
-        .pipe(src(path.src.vendor.css))
         .pipe(dest(path.build.style))
         .pipe(browsersync.stream())
 }
 
 function js() {
     return src(path.src.js)
-        .pipe(dest(path.build.js))
-        .pipe(src(path.src.vendor.js))
+        .pipe(webpack({
+            mode: 'production',
+            output:{
+                filename:'script.js'
+            }
+        }))
         .pipe(dest(path.build.js))
         .pipe(browsersync.stream())
 }
 
 function images() {
     return src(path.src.img)
-        .pipe(
+        /*.pipe(
             webp({
                 quality: 70
             })
-        )
+        )*/
         .pipe(dest(path.build.img))
         .pipe(src(path.src.img))
         .pipe(
@@ -130,6 +133,13 @@ function fonts() {
         .pipe(dest(path.build.fonts))
 }
 
+function vendors() {
+        src(path.src.vendor.css)
+        .pipe(dest(path.build.style));
+    return src(path.src.vendor.js)
+        .pipe(dest(path.build.js))
+}
+
 function watchFiles() {
     gulp.watch([path.watch.html],html);
     gulp.watch([path.watch.style],style);
@@ -141,11 +151,12 @@ function clean(){
     return del(path.clean);
 }
 
-let build = gulp.series(clean,  gulp.parallel(js,style,html,images, fonts));
+let build = gulp.series(clean,  gulp.parallel(js,style,vendors,html,images,fonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 
 exports.js = js;
+exports.vendors = vendors;
 exports.fonts = fonts;
 exports.images = images;
 exports.style  = style;

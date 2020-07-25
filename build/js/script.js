@@ -1,16 +1,1 @@
-jQuery(document).ready(function($) {
-    let $linkTheme = $('.swap');
-    let $linkThemeData;
-
-    $linkTheme.click(function (e) {
-        $linkThemeData = $(e.target).data('theme-color');
-        $('html').attr('data-theme', $linkThemeData);
-
-        for(let i = 0;i<this.children.length;i++){
-            this.children[i].classList.remove('active');
-        }
-        e.target.classList.add('active');
-
-    });
-
-});
+!function(e){var t={};function r(o){if(t[o])return t[o].exports;var n=t[o]={i:o,l:!1,exports:{}};return e[o].call(n.exports,n,n.exports,r),n.l=!0,n.exports}r.m=e,r.c=t,r.d=function(e,t,o){r.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},r.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.t=function(e,t){if(1&t&&(e=r(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(r.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)r.d(o,n,function(t){return e[t]}.bind(null,n));return o},r.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return r.d(t,"a",t),t},r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},r.p="",r(r.s=0)}([function(e,t,r){"use strict";function o(){let e;$(".swap").click((function(t){e=$(t.target).data("theme-color"),$("html").attr("data-theme",e);for(let e=0;e<this.children.length;e++)this.children[e].classList.remove("active");t.target.classList.add("active")}))}function n(){$(".slider-for").slick({centerMode:!0,slidesToShow:1,slidesToScroll:1,fade:!0,arrows:!0,centerPadding:"20px",infinite:!1,waitForAnimate:!1,asNavFor:".slider-nav"}),$(".slider-nav").slick({slidesToShow:3,slidesToScroll:1,asNavFor:".slider-for",dots:!1,vertical:!0,arrows:!1,focusOnSelect:!0,waitForAnimate:!1}),$(".slider").slick({slidesToShow:3,slidesToScroll:1,adaptiveHeight:!0,centerMode:!1,arrows:!0})}function i(){$(".popup").fancybox()}function a(){let e=$(".form-contact > form"),t=$(".in-email > input");$(".in-text > textarea");$(".button-form").on("click",t=>{e.submit()}),e.on("submit",e=>{if(e.preventDefault(),r=t.val(),/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(String(r).toLowerCase()))return console.log("send"),!1;var r;console.log("error")})}r.r(t),jQuery(document).ready((function(e){o(),n(),i(),a()}))}]);
