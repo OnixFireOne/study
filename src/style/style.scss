@@ -57,10 +57,29 @@ hr {
   margin-bottom: 1rem;
 
 }
+.title{
+  h2{
+    margin-block-end: 1rem;
+    line-height: 1;
+  }
+  p{
+    font-size: 10pt;
+  }
+  .cont-inf{
+    margin-top: 4rem;
+    opacity: 0.5;
+    font-size: 9pt;
+  }
+}
 .second{
 
   p{
     margin-top: -5px;
+  }
+  .title-second{
+    h2{
+
+    }
   }
 }
 .third{

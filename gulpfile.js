@@ -64,7 +64,7 @@ function browserSync(params) {
 function html() {
     return src(path.src.html)
         .pipe(pug())
-        //.pipe(webphtml())
+        .pipe(webphtml())
         .pipe(
             typograf({
                 locale:['ru', 'en-US']
@@ -109,11 +109,11 @@ function js() {
 
 function images() {
     return src(path.src.img)
-        /*.pipe(
+        .pipe(
             webp({
                 quality: 70
             })
-        )*/
+        )
         .pipe(dest(path.build.img))
         .pipe(src(path.src.img))
         .pipe(
@@ -135,9 +135,9 @@ function fonts() {
 
 function vendors() {
         src(path.src.vendor.css)
-        .pipe(dest(path.build.style));
+        .pipe(dest(path.build.vendor.css));
     return src(path.src.vendor.js)
-        .pipe(dest(path.build.js))
+        .pipe(dest(path.build.vendor.js))
 }
 
 function watchFiles() {

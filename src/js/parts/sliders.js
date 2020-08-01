@@ -26,7 +26,6 @@ function initSliderSecond() {
     $('.slider').slick({
         slidesToShow:3,
         slidesToScroll:1,
-        adaptiveHeight:true,
         centerMode: false,
         arrows:true
     });

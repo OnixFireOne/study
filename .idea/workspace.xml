@@ -2,53 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80edfa10-3e71-4ac1-b64d-76fec8bdfe66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fonts/slick.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/slick.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/slick.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/slick.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/arr-left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/arr-right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/include/first-slider.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/include/footer.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/include/second-slider.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/parts/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/parts/popup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/parts/sliders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/parts/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/_settings.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/main-popup.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/slick-theme.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/slick.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/slider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendor/css/magnific-popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendor/js/jquery.magnific-popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendor/js/slick.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/magnific-popup.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/img-my.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/popper.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/jquery-3.5.1.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/jquery.magnific-popup.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/slick.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/p.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/p.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/include/first-slider.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/first-slider.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/include/footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/footer.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/include/second-slider.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/second-slider.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/parts/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/parts/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/parts/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/parts/sliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/slick-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/slick-theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/slider.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vendor/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vendor/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vendor/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vendor/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vendor/js/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vendor/js/popper.min.js.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +100,11 @@
       <workItem from="1595427440285" duration="3372000" />
       <workItem from="1595444344930" duration="195000" />
       <workItem from="1595489728874" duration="16212000" />
-      <workItem from="1595575356800" duration="20643000" />
+      <workItem from="1595575356800" duration="20898000" />
+      <workItem from="1595761821130" duration="150000" />
+      <workItem from="1595833283304" duration="176000" />
+      <workItem from="1596207881569" duration="5547000" />
+      <workItem from="1596283662444" duration="5004000" />
     </task>
     <servers />
   </component>
@@ -154,9 +132,9 @@
       <screen x="0" y="23" width="2560" height="1334" />
     </state>
     <state x="1764" y="425" key="run.anything.popup/0.23.2560.1334@0.23.2560.1334" timestamp="1594938264532" />
-    <state x="1480" y="475" width="670" height="676" key="search.everywhere.popup" timestamp="1595102273102">
+    <state x="1480" y="475" width="670" height="676" key="search.everywhere.popup" timestamp="1596287497378">
       <screen x="0" y="23" width="2560" height="1334" />
     </state>
-    <state x="1480" y="475" width="670" height="676" key="search.everywhere.popup/0.23.2560.1334@0.23.2560.1334" timestamp="1595102273102" />
+    <state x="1480" y="475" width="670" height="676" key="search.everywhere.popup/0.23.2560.1334@0.23.2560.1334" timestamp="1596287497378" />
   </component>
 </project>

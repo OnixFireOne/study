@@ -1,14 +1,37 @@
 .row
-    .col
-        .title-second
-            h2 Популярное
-            span Нестареющая классика и бестселлеры.
-        .slider.align-self-center
-            .item-slider
-                img(src='https://via.placeholder.com/200x300')
-            .item-slider
-                img(src='https://via.placeholder.com/200x300')
-            .item-slider
-                img(src='https://via.placeholder.com/300x200')
-            .item-slider
-                img(src='https://via.placeholder.com/300x200')
+    .col-12.title
+        h2 Популярное
+        p Нестареющая классика и бестселлеры.
+    .col-12.slider
+        .item-slider
+            img.lazyload(data-src='img/02-01.jpg' width='200px')
+            .item-text
+                p Девушка с жемчужной сережкой, 1665
+                p.small Ян Вермеер
+            .item-text
+                p.small 44 х 39 см, холст
+                p.price 900₽
+        .item-slider
+            img.lazyload(data-src='img/02-02.jpg' width='200px')
+            .item-text
+                p Бонапарт на перевале Сен-Бернар, 1801
+                p.small Жак-Луи Давид
+            .item-text
+                p.small 261 х 220 см, холст
+                p.price 3 900₽
+        .item-slider
+            img.lazyload(data-src='img/02-03.jpg' width='200px')
+            .item-text
+                p Охотники на снегу, 1565
+                p.small Питер Брейгель Страший
+            .item-text
+                p.small 117 х 162 см, холст
+                p.price 2 400₽
+        .item-slider
+            img.lazyload(data-src='img/02-04.jpg' width='200px')
+            .item-text
+                p Золотой Рог. Босфор, 1872
+                p.small Иван Константинович Айвазовский
+            .item-text
+                p.small 83 х 104 см, холст
+                p.price 2 000 000₽

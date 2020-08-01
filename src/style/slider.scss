@@ -44,19 +44,20 @@
       margin-right: 2.2rem;
     }
 
-    .small{
-      opacity: 0.5;
-    }
-
     p {
       padding: 0;
       margin: 0;
     }
 
-    .price{
-      color: orange;
-    }
+
   }
+}
+
+.small{
+  opacity: 0.5;
+}
+.price{
+  color: orange;
 }
 
 .item-nav{
@@ -72,4 +73,30 @@
 }
 .title-second{
   color:white;
+}
+.slider{
+  margin-top: 3rem;
+  .item-slider{
+    font-size: 9pt;
+
+    .item-text{
+      width: 200px;
+      margin: 1rem auto;
+      p{
+        margin:0;
+      }
+
+      &:last-child{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    img{
+      margin: auto;
+    }
+  }
+  .slick-current{
+    opacity: 1;
+  }
 }

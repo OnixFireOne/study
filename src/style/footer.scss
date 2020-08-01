@@ -3,21 +3,33 @@ footer{
   margin: auto;
   width: 980px;
   padding-bottom: 4rem;
+  font-size: 9pt;
+
+  a {
+    &:hover{
+      color: aquamarine;
+    }
+  }
 }
 
 .form-contact{
+  position: relative;
   margin: 3rem auto 0 auto;
   width: 300px;
 
   .in-email{
     width:$width-form-input;
-    height: 30px;
+    height: 40px;
     margin-bottom: 1rem;
+    background-color: #F3F3F3;
+    border-radius: 2px;
 
     input{
       width: 100%;
       height: 100%;
       padding: 10px;
+      border: none;
+      border-radius: 2px;
       font-family: 'Roboto', sans-serif;
     }
   }
@@ -59,3 +71,40 @@ footer{
   width: 100%;
   max-width: 980px;
 }
+
+.error-form{
+  display: flex;
+  width: 150px;
+  height: 40px;
+  align-items: center;
+  position: absolute;
+  color: red;
+  right: -160px;
+  top:0px;
+  align-self: center;
+
+  p {
+   margin: 0;
+  }
+}
+.success-form{
+  color: #669900;
+  position: absolute;
+  top:0;
+  font-size: 10pt;
+
+  p:first-child{
+    margin: 0 0 2rem 0;
+    font-size: 20pt;
+    font-weight: bold;
+    transform: rotate(-5deg);
+  }
+}
+
+.error-input{
+  background-color: rgba(225,0,0,0.2);
+}
+.visible-none{
+  visibility: hidden;
+}
+

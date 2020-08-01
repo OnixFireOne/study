@@ -1,9 +1,9 @@
 .container
     .row
-        .col
+        .col.title
             h2 Написать нам
-            span  Заполните форму справа
-            span  или отправте письмо на shop@reproduct.io
+            p  Заполните форму справа
+            p  или отправте письмо на shop@reproduct.io
         .col
             .form-contact
                 form
@@ -11,6 +11,11 @@
                         input(type='email' placeholder='Email')
                     .in-text
                         textarea(placeholder='Сообщение')
+                .error-form.visible-none
+                    p Введите почту в формате ххх@ххх.хх
+                .success-form.visible-none
+                    p Отправленно
+                    p Мы ответим вам на почту в течение нескольких рабочих дней
     .row
         .col
             .cap Репродукцио, 2020
