@@ -1,0 +1,27 @@
+header
+    .container
+            .row
+                .col-12
+                    nav.menu(itemscope, itemtype='https://schema.org/SiteNavigationElement')
+                        .menu__logo(itemprop='name')
+                            a.menu__item(itemprop='url', href='/') Фетч
+                        .menu__list
+                            a.menu__item(itemprop='url')
+                                span(itemprop="name") Одежда
+                            a.menu__item(itemprop='url', href='catalog.html')
+                                span(itemprop="name") Обувь
+                            a.menu__item(itemprop='url', href='#')
+                                span(itemprop="name") Аксессуары
+                            a.menu__item(itemprop='url', href='#')
+                                span(itemprop="name") Блог
+                            a.menu__item(itemprop='url', href='#')
+                                span(itemprop="name") Магазин
+                            a.menu__item(itemprop='url', href="#")
+                                span(itemprop="name") Доставка&nbsp;и&nbsp;оплата
+                        .menu__cart.not-active
+                            a.menu__item.menu__item_icon(itemprop='url', href="checkout.html")
+                                        figure.icon-cart
+                                            span.icon-cart__number(style='visibility:hidden;')
+                                        span(itemprop="name") Оформить заказ
+
+

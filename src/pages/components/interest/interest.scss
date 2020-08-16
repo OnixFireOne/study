@@ -1,0 +1,20 @@
+.interest {
+  margin-top: 48px;
+  @include w-to($sm){
+    margin-bottom: 40px;
+  }
+  /* .interest__title */
+  &__title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  /* .interest__slider */
+  &__slider {
+  }
+}
+.slider-int {
+  /* .slider-int__item */
+  &__item {
+  }
+}

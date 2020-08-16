@@ -1,0 +1,59 @@
+include ../../mixins/card
+include ../../mixins/webp-images
+.checkout
+    .checkout__title
+        .container
+            .row
+                .col-12
+                    h2 Фетч <span>•</span> Оформление&nbsp;заказа
+    .checkout__content
+        .container
+            .row.justify-content-between
+                .col-12.col-md-5
+                    .checkout__item
+                        .checkout__card
+                            -var item = {title: 'Maison Margiela Fusion Low Sneakers',subtitle:'Кроссовки',price:'92 000 ₽'}
+                            -for(var i=1;i<4;i++)
+                                    +card(item)
+                                        +webp-images('assets/img/catalog/img'+i,'img'+i)
+                        hr
+                        .checkout__price
+                            span 276 000 ₽
+                            span Доставка бесплатно
+                .col-12.col-md-6
+                    .checkout__form
+                        form.form-ch__main
+                            .form-ch
+                                label.form-ch__item
+                                    span Эл. почта
+                                    input(type="mail" placeholder='petrov@gmail.com' required='true')
+                                    span.error-form.visible-none Не правильно введен E-mail
+                                span Пришлём чеки и трек-номер
+
+                                label.form-ch__item
+                                    span Телефон
+                                    input(type="tel" placeholder='+7 995 275-12-37' required='true')
+                                    span.error-form.visible-none Не правильно введен Телефон
+                                span Менеджер позвонит, чтобы подтвердить заказ
+
+                                label.form-ch__item
+                                    span Город
+                                    input(type="text" placeholder='Москва')
+                                label.form-ch__item
+                                    span Адрес
+                                    textarea(placeholder='Тимирязевская, 32, квартира 99, вход со двора')
+                            .form-ch__button-area
+                                .form-ch__text Бесплатная доставка курьером.<br> Оплата картой онлайн.
+                                .form-ch__button.button-i
+                                    button(type="submit").button-i__item Оформить заказ, 276 000 ₽
+        .checkout__footer
+            .container
+                .row
+                    .col-12
+                        .checkout__footer-item
+                            span © Фетч-команда, 2019
+                            span 8 800 912-11-42, звонок бесплатный
+                            span
+                                a(href="mail:shop@fetch.ru") shop@fetch.ru
+                            span
+                                a(href="javascript:;") Правила обработки персональных данных

@@ -1,0 +1,8 @@
+mixin webp-images(src,alt,type="jpg")
+    picture(class!=attributes.class)
+        source(media='(max-width:425px)', data-srcset=src+'-sm.webp', type='image/webp')
+        source(media='(min-width:1024px)', data-srcset=src+'.webp', type='image/webp')
+        source(media='(max-width:425px)', data-srcset=src+'-sm.'+type, type='image/'+type)
+        source(media='(min-width:1024px)', data-srcset=src+'.'+type, type='image/'+type)
+        block
+        img(data-src=src+'.'+type, alt=alt, itemprop="image").lazyload

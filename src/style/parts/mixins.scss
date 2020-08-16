@@ -1,0 +1,18 @@
+
+@mixin w-from($screen) {
+  @media (min-width: $screen) {
+    @content
+  }
+}
+
+@mixin w-to($screen) {
+  @media (max-width: $screen) {
+    @content
+  }
+}
+
+@mixin w-range($screen1, $screen2) {
+  @media (min-width: $screen) and (max-width: $screen2 -1px) {
+    @content
+  }
+}

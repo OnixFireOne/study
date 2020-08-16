@@ -1,0 +1,50 @@
+.card {
+  width: 240px;
+  /* .card__image */
+  @include w-to($sm){
+    width: 100%;
+
+    img{
+      width: 100%;
+    }
+  }
+  &__image {
+  }
+  /* .card__text */
+  &__text {
+  }
+  /* .card__title */
+  &__title {
+
+    margin-bottom: 12px;
+
+  }
+  /* .card__inner */
+  &__inner {
+
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    margin: 4px 0;
+    a{
+      color:black;
+      &:hover{
+        color:#4541fe;
+      }
+    }
+
+    @include w-to($sm){
+      font-size: 13px;
+    }
+
+  }
+  /* .card__subtitle */
+  &__subtitle {
+    font-size: 13px;
+  }
+  /* .card__price */
+  &__price {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

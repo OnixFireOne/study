@@ -1,0 +1,11 @@
+mixin card(item)
+    .card(class!=attributes.class, itemscope itemtype="http://schema.org/Product")
+        .card__image
+            block
+        .card__text
+            .card__title
+                .card__inner(itemprop="name")
+                    a(itemprop="url", href="item.html")=item.title
+                .card__subtitle(itemprop="description")=item.subtitle
+            .card__price(itemprop="offers" itemscope itemtype="http://schema.org/Offer")
+                span(itemprop="price")=item.price

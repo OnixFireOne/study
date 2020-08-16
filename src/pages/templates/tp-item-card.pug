@@ -1,0 +1,83 @@
+include ../mixins/webp-images
+include ../mixins/card
+.item
+    .container
+        .row
+            .col-12
+                .item__main(itemscope itemtype="http://schema.org/Product")
+                    .item__images
+                        .item__slider.slider-card
+                            .slider-card__main
+                                block card-image-main
+
+                            .slider-card__nav.slider-nav
+                                .slider-nav__inner
+                                    block card-image-nav
+
+                    .item__info
+                        .item__title
+                            block title
+
+                        .item__form
+                            .form
+                                form(action="#")
+                                    .form__radio
+                                        .form__name Цвет
+                                        .form__radio-button.big
+                                            .form__item
+                                                label.custom-radio
+                                                    input(type='radio', name='color' checked='checked', value='white-pink')
+                                                    span Белый с розовым
+                                            .form__item
+                                                label.custom-radio
+                                                    input(type='radio', name='color', value='white-green')
+                                                    span Белый с зелёным
+                                        .form__name Размер US
+                                        .form__radio-button
+                                            .form__item
+                                                label.custom-radio
+                                                    input(type='radio', name='size' value='6')
+                                                    span 6
+                                            .form__item
+                                                label.custom-radio
+                                                    input(type='radio', name='size' checked='checked' value='6,5')
+                                                    span 6,5
+                                            .form__item
+                                                label.custom-radio
+                                                    input(type='radio', name='size' value='7')
+                                                    span 7
+                                            .form__item
+                                                label.custom-radio
+                                                    input(type='radio', name='size' value='9')
+                                                    span 9
+
+                                    .form__info
+                                        a.form__link(data-fancybox, data-src="#table-size", href="javascript:;") Таблица размеров
+                                    .form__button.button-i
+                                        button(type='submit' itemprop="offers" itemscope itemtype="http://schema.org/Offer").button-i__item
+                                            |Купить, <span itemprop="price">92 000</span> <span itemprop="priceCurrency">₽</span>
+                                .form__table(style='display: none;', id="table-size")
+                                    h2 Таблица размеров
+                                    .form-table
+                                        .form-table__inner
+                                            img(src='assets/img/item/table.svg')
+                        .item__text
+                            .item__char.char
+                                .char__columns
+                                    .char__column
+                                        .char__title Материал
+                                        .char__text
+                                            block char-text-matireal
+                                    .char__column
+                                        .char__title Страна-производитель
+                                        .char__text
+                                            block char-text-cantry
+                                .char__about
+                                    .char__title Описание
+                                    .char__text(itemprop="description")
+                                        block char-text-about
+                                .char__ditalis
+                                    .char__title Детали
+                                    .char__text
+                                        block char-text-ditali
+                include ../components/interest/interest

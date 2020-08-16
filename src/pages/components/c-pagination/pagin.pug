@@ -1,0 +1,11 @@
+.pagin
+    .container
+        .row
+            .col-12
+                .pagin__title Страницы
+                .pagin__numbers
+                    - for (var i=1; i<13;i++)
+                        if (i==1)
+                            a.pagin__link.pagin__link_active(href='#')=i
+                        else
+                            a.pagin__link(href="#")=i

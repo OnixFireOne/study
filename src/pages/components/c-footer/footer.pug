@@ -1,0 +1,92 @@
+footer.footer-nav
+    .container
+        .row
+            .col-12(itemscope itemtype="http://schema.org/SiteNavigationElement")
+                ul.footer-list(itemprop="about" itemscope itemtype="http://schema.org/ItemList")
+                    li.footer-list__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList")
+                        meta(itemprop="name" content="Фетч")
+                        a(itemprop="url", href="#").footer-list__logo Фетч
+                        ul.footer-list__link
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(href="#") Магазин
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(href="#") Блог
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(href="#") Доставка и оплата
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                .contact-info(itemscope itemtype="http://schema.org/Organization")
+                                    a(itemprop="email", href="#") shop@fetch.ru
+                                    .contact-info__tel
+                                        span(itemprop="telephone") 8 800 912-11-42
+                                        span Звонок бесплатный
+                    li.footer-list__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList")
+                        meta(itemprop="name" content="Для мужчин")
+                        a(itemprop="url", href="#") Для мужчин
+                        ul.footer-list__link
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Верхняя одежда
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Рубашка и поло
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Трикотаж
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Брюки и джинсы
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Белье и носки
+                    li.footer-list__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList")
+                        meta(itemprop="name" content="Для женщин")
+                        a(itemprop="url", href="#") Для женщин
+                        ul.footer-list__link
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Верхняя одежда
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Рубишки и поло
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Трикотаж
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Платья и юбки
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Белье и носки
+                    li.footer-list__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList")
+                        meta(itemprop="name" content="Обувь")
+                        a(itemprop="url", href="#") Обувь
+                        ul.footer-list__link
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Кроссовки и кеды
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Ботинки
+                    li.footer-list__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList")
+                        meta(itemprop="name" content="Аксессуары")
+                        a(itemprop="url", href="#") Аксессуары
+                        ul.footer-list__link
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Сумки и рюкзаки
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Часы
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Бижутерия
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Средства для ухода
+                    li.footer-list__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList")
+                        meta(itemprop="name" content="Скидки")
+                        a(itemprop="url", href="#") Скидки
+                        ul.footer-list__link
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Летняя распродажа
+                            li.footer-list__sublink(itemprop="itemListElement")
+                                a(itemprop="url", href="#") Коллекция 2018
+            .col-12
+                .footer-coop
+                    .footer-coop__item © Фетч-команда, 2019
+                    .footer-coop__item
+                        a(data-fancybox, data-src="#privacy", href='javascript:;') Правила обработки персональных данных
+                    .footer-coop__item
+                        a(href='#') Разработка и поддержка сайта
+    #privacy(style='display:none;')
+        .container
+            .row
+                .col-12
+                    .privacy__text
+                        include privacy
+
+

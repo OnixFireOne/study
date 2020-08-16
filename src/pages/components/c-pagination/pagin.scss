@@ -1,0 +1,35 @@
+.pagin {
+  margin-top: 64px;
+
+  @include w-to($sm){
+    margin: 40px 0;
+  }
+  /* .pagin__title */
+  &__title {
+    font-size: 13px;
+    color: #666666;
+  }
+  /* .pagin__numbers */
+  &__numbers {
+    margin-top: 4px;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+  /* .pagin__link */
+  &__link {
+    margin-right: 5px;
+    color: #666666;
+    text-decoration-line: unset;
+    transition: all 0.2s ease-in-out ;
+
+    &:hover{
+      font-size: 24px;
+    }
+  }
+  &__link_active{
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+  }
+}

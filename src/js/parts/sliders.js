@@ -1,38 +1,78 @@
 function initSliderFirst() {
-    $('.slider-for').slick({
-        centerMode:true,
+    $('.slider').slick({
         slidesToShow:1,
         slidesToScroll:1,
-        fade: true,
         arrows: true,
-        centerPadding:'20px',
-        infinite:false,
         waitForAnimate: false,
-        asNavFor: '.slider-nav'
     });
-    $('.slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        dots: false,
-        vertical: true,
-        arrows: false,
-        focusOnSelect: true,
-        waitForAnimate:false,
-    });
+    // $('.slider-nav').slick({
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     asNavFor: '.slider-for',
+    //     dots: false,
+    //     vertical: true,
+    //     arrows: false,
+    //     focusOnSelect: true,
+    //     waitForAnimate:false,
+    // });
 }
 
 function initSliderSecond() {
-    $('.slider').slick({
-        slidesToShow:3,
+    $('.slider-int').slick({
+        slidesToShow:4,
         slidesToScroll:1,
         centerMode: false,
-        arrows:true
+        arrows:true,
+        variableWidth:false,
+        responsive:[
+            {
+                breakpoint:425,
+                settings:{
+                    slidesToShow:1
+                }
+            }
+        ]
     });
+}
+
+function initSliderItemNav() {
+    $('.slider-card__main').slick({
+        fade:true,
+        arrows:false,
+        draggable:false,
+        swipe:false,
+        asNavFor:'.slider-nav__inner',
+
+    });
+
+    $('.slider-nav__inner').slick({
+        slidesToShow:4,
+        arrows:false,
+        variableWidth: true,
+        responsive:[
+            {
+                breakpoint:425,
+                settings:{
+                    slidesToShow:3
+                }
+            }
+        ],
+        focusOnSelect:true,
+        asNavFor:'.slider-card__main'
+    })
 }
 
 
 export default function initSliders() {
-    initSliderFirst();
-    initSliderSecond();
+
+    if($('.slider').hasClass('slider')){
+        initSliderFirst();
+    }
+    if($('.interest__slider').hasClass('slider-int')){
+        initSliderSecond();
+    }
+    if($('.item__slider').hasClass('slider-card')){
+        initSliderItemNav();
+    }
+
 }

@@ -1,0 +1,9 @@
+include ../../mixins/card
+include ../../mixins/webp-images
+.interest
+    .interest__title Вам может быть интересно
+    .interest__slider.slider-int
+        - var item={title:'Maison Margiela Fusion Low Sneakers', subtitle: 'Кроссовки', price: '92 000 ₽'}
+        - for(var i=1;i<6;i++)
+            +card(item).slider-int__item
+                +webp-images('assets/img/catalog/img'+i,'img'+i)

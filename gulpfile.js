@@ -5,14 +5,14 @@ let source_folder = 'src';
 let path = {
     build:{
         html: project_folder + '/',
-        style: project_folder + '/css/',
-        js: project_folder + '/js/',
-        img: project_folder + '/img/',
-        fonts: project_folder + '/fonts/',
-        vendor: { css: project_folder + '/vendor/css/', js: project_folder + '/vendor/js/' },
+        style: project_folder + '/assets/css/',
+        js: project_folder + '/assets/js/',
+        img: project_folder + '/assets/img/',
+        fonts: project_folder + '/assets/fonts/',
+        vendor: { css: project_folder + '/assets/vendor/css/', js: project_folder + '/assets/vendor/js/' },
     },
     src:{
-        html: source_folder + '/*.pug',
+        html: source_folder + '/pages/*.pug',
         style: source_folder + '/style/style.scss',
         js: source_folder + '/js/script.js',
         img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
@@ -22,6 +22,7 @@ let path = {
     watch:{
         html: source_folder + '/**/*.pug',
         style: source_folder + '/style/**/*.scss',
+        components: source_folder + '/pages/**/*.{scss,pug,js}',
         js: source_folder + '/js/**/*.js',
         img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
     },
@@ -64,7 +65,7 @@ function browserSync(params) {
 function html() {
     return src(path.src.html)
         .pipe(pug())
-        .pipe(webphtml())
+        //.pipe(webphtml())
         .pipe(
             typograf({
                 locale:['ru', 'en-US']
@@ -111,7 +112,7 @@ function images() {
     return src(path.src.img)
         .pipe(
             webp({
-                quality: 70
+                quality: 90
             })
         )
         .pipe(dest(path.build.img))
@@ -143,6 +144,7 @@ function vendors() {
 function watchFiles() {
     gulp.watch([path.watch.html],html);
     gulp.watch([path.watch.style],style);
+    gulp.watch([path.watch.components],style);
     gulp.watch([path.watch.js],js);
     gulp.watch([path.watch.img],images);
 }

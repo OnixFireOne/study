@@ -1,10 +1,14 @@
 import initTheme from "./parts/theme";
 import initSliders from "./parts/sliders";
-import initPopup from "./parts/popup";
-import from from "./parts/form";
+import initContent from "./parts/content";
+import form from "./parts/form";
+import InitHeader from "./parts/header";
 jQuery(document).ready(function($) {
     initTheme();
     initSliders();
-    initPopup();
-    from();
+    // initPopup();
+    form();
+    InitHeader();
+    initContent();
+
 });

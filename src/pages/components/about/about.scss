@@ -1,0 +1,57 @@
+.about {
+  position: relative;
+  margin-top: 25px;
+  /* .about__title */
+  &__title {
+    h2{
+      font-size: 32px;
+    }
+  }
+  /* .about__text */
+  &__text {
+    max-width: 464px;
+    p:first-child{
+      margin-top: 32px;
+    }
+  }
+  /* .about__info */
+  &__info {
+    margin-top: 53px;
+    background-color: #f2f2f2;
+    padding: 26px 24px 32px;
+    font-size: 16px;
+    @include w-to($sm){
+      margin-top: 8px;
+      padding: 16px 15px 23px;
+      margin-right: -15px;
+      margin-left: -15px;
+
+    }
+  }
+  /* .about__ul */
+  &__ul {
+
+  }
+  /* .about__cont */
+  &__cont {
+    margin-top: 16px;
+    a{
+      color: black;
+      &:hover{
+        color: #4541FE;
+      }
+    }
+  }
+  &__tel{
+    margin-top: 11px;
+    span{
+      display: block;
+      &:first-child{
+        font-weight: 700;
+      }
+      &:last-child{
+        font-size: 13px;
+      }
+    }
+  }
+}

@@ -1,17 +1,22 @@
 export default function initTheme() {
 
-    let $linkTheme = $('.swap');
-    let $linkThemeData;
+    let $white = $('.white');
+    let $item = $('.slider__item');
+    let $header =  $('.wrapper');
 
-    $linkTheme.click(function (e) {
-        $linkThemeData = $(e.target).data('theme-color');
-        $('html').attr('data-theme', $linkThemeData);
+    //$item.on('mouseover', chColor);
 
-        for(let i = 0;i<this.children.length;i++){
-            this.children[i].classList.remove('active');
+    function chColor(){
+        if($white.hasClass('slick-active')) {
+            $header.attr('data-theme','dark')
+        }else{
+            $header.attr('data-theme','light');
         }
-        e.target.classList.add('active');
+    }
 
+    $('.slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        chColor();
     });
+
 
 }

@@ -1,0 +1,17 @@
+include  ../../mixins/card
+include ../../mixins/webp-images
+.catalog
+    .catalog__bg
+    .container
+        .row
+            .col-12
+                .catalog__title
+                    h2 Обувь
+                .catalog__card
+                    .catalog__item
+                        - var pic = 'assets/img/catalog/img'
+                        - var item = {title:'Maison Margiela Fusion Low Sneakers',subtitle:'Кроссовки',price:'92 000 ₽'}
+                        - for (var i = 1; i < 12; i++)
+                            +card(item)
+                                +webp-images(pic+i,'img'+i)
+
